@@ -1,0 +1,11 @@
+{
+    "workbench.enableExperiments": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "C:\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+    },
+    "cmake.preferredGenerators": [
+        "Ninja"
+    ]
+}
