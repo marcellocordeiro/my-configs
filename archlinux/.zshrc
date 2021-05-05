@@ -7,7 +7,7 @@
 ###############
 
 alias ls='ls --color=auto'
-alias grep='grep --color=auto --exclude-dir{.git}'
+alias grep='grep --color=auto --exclude-dir={.git}'
 alias diff='diff --color=auto'
 
 #############
