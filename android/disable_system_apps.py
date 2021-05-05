@@ -1,29 +1,35 @@
-from shlex import split
 from subprocess import run
 
-
-def runCommand(command):
-    run(split(command))
-
-
 appsToUninstall = [
-    "br.org.sidi.appsbrasil",  # Apps Brasil
+    "com.sec.android.app.fm", # Radio
+
     "com.facebook.appmanager",  # Facebook
     "com.facebook.katana",  # Facebook
     "com.facebook.services",  # Facebook
     "com.facebook.system",  # Facebook
+
+    "br.org.sidi.appsbrasil",  # Apps Brasil
     "flipboard.boxer.app",  # Flipboard Briefing
     "com.linkedin.android",  # LinkedIn
     "com.microsoft.office.excel",  # Microsoft Excel
     "com.microsoft.office.powerpoint",  # Microsoft PowerPoint
     "com.microsoft.office.word",  # Microsoft Word
     "com.microsoft.skydrive",  # Microsoft OneDrive
+
     "com.google.android.googlequicksearchbox",  # Google App
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
     "com.google.ar.core",  # Google AR Core
     "com.google.android.projection.gearhead",  # Android Auto
     "com.google.android.youtube",  # YouTube
+
+    "com.samsung.android.rubin.app", # Samsung Customization Service
+    "com.samsung.android.app.spage", # Samsung Free
+    "com.samsung.android.livestickers", # Deco Pic
+    "com.samsung.android.smartswitchassistant",  # Smart Switch assistant
+    "com.sec.android.easyMover.Agent",  # Smart Switch Agent
+    "com.samsung.android.kidsinstaller" # Kids Installer
+
 ]
 
 appsToDisable = [
@@ -64,20 +70,26 @@ arStuff = [
     "com.samsung.android.ardrawing",
 ]
 
-for app in appsToUninstall + bixby + samsungPay + arStuff:
-    command = f"adb shell pm uninstall --user 0 {app}"
-    runCommand(command)
+cleanSetup = [
+    "com.google.android.apps.docs", # Google Drive
+    "com.google.android.apps.maps", # Google Maps
+    "com.google.android.gm", # Gmail
+]
 
+uninstallCommand = ["adb", "shell", "pm", "uninstall", "--user", "0"]
+disableCommand = ["adb", "shell", "pm", "disable-user", "--user", "0"]
+clearDataCommand = ["adb", "shell", "pm", "clear"]
+installExistingCommand = ["adb", "shell", "cmd", "package", "install-existing"]
+
+for app in appsToUninstall + bixby + samsungPay + arStuff:
+    run(uninstallCommand + [app])
 
 for app in appsToDisable + systemAppsToDisable:
-    command = f"adb shell pm clear {app}"
-    runCommand(command)
-    command = f"adb shell pm disable-user --user 0 {app}"
-    runCommand(command)
+    run(clearDataCommand + [app])
+    run(disableCommand + [app])
 
 for app in []:
-    command = f"adb shell cmd package install-existing {app}"
-    runCommand(command)
+    run(installExistingCommand + [app])
 
 # To delete data
 # adb shell pm clear {app}
