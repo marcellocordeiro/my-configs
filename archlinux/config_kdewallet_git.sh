@@ -1,10 +1,11 @@
 #!/bin/sh
 
-ssh_add_script_file=~/.config/autostart-scripts/ssh-add.sh
-ssh_add_script=$(cat <<'EOF'
-#!/bin/sh
-
-ssh-add -q ~/.ssh/id_ed25519 < /dev/null
+ssh_add_autostart_file=~/.config/autostart/ssh-add.desktop
+ssh_add_autostart=$(cat <<'EOF'
+[Desktop Entry]
+Exec=ssh-add -q ~/.ssh/id_ed25519
+Name=ssh-add
+Type=Application
 EOF
 )
 
@@ -17,10 +18,9 @@ export SSH_ASKPASS='/usr/bin/ksshaskpass'
 EOF
 )
 
-echo "${ssh_add_script}" > "${ssh_add_script_file}"
+echo "${ssh_add_autostart}" > "${ssh_add_autostart_file}"
 echo "${ssh_env_script}" > "${ssh_env_script_file}"
 
-chmod +x "${ssh_add_script_file}"
 chmod +x "${ssh_env_script_file}"
 
 # ssh-agent service
