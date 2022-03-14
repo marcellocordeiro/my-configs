@@ -15,7 +15,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 
 # npm
 export PATH=$PATH:$HOME/.local/bin
-export npm_config_prefix=$HOME/.local
+export NPM_CONFIG_USERCONFIG=$HOME/.config/npm/npmrc
 EOF
 )
 

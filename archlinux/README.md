@@ -14,7 +14,3 @@ EDITOR=nano visudo
 usermod -m -G wheel <username>
 passwd <username>
 ```
-
-```bash
-pacman -S xdg-user-dirs
-```
