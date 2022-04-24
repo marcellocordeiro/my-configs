@@ -11,6 +11,6 @@ EDITOR=nano visudo
 ```
 
 ```bash
-usermod -m -G wheel <username>
+useradd -m -G wheel <username>
 passwd <username>
 ```
