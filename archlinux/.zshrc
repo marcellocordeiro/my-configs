@@ -15,7 +15,8 @@ alias diff='diff --color=auto'
 #############
 
 setopt PROMPT_SUBST
-autoload -Uz colors && colors
+autoload -Uz colors
+colors
 
 ## Main theme
 function my_prompt() {
@@ -68,7 +69,7 @@ fi
 ### History ###
 ###############
 
-HISTFILE=${HOME}/.zsh_history
+HISTFILE=$XDG_CACHE_HOME/zsh/zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
@@ -81,7 +82,10 @@ setopt SHARE_HISTORY
 ### Completion ###
 ##################
 
-autoload -Uz compinit && compinit
+mkdir -p $XDG_CACHE_HOME/zsh
+
+autoload -Uz compinit
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
 # Do not require a leading '.' in a filename to be matched explicitly
 # setopt GLOBDOTS
