@@ -32,23 +32,23 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
+# [cargo]
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+
 # [gnupg]
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
-# [gtk-2]
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
-
 # [kde]
 export KDEHOME="$XDG_CONFIG_HOME"/kde
-
-# [zsh]
-export ZDOTDIR=$HOME/.config/zsh
 
 # [firefox]
 # Run Firefox under Wayland.
 if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi
+
+# [wine]
+export WINEPREFIX="$XDG_DATA_HOME"/wine
 EOF
 )
 
