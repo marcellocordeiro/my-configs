@@ -1,45 +1,41 @@
 {
+    // General
     "update.mode": "none",
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.enablePersistentSessions": false,
+    // Editor
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
-    "window.titleBarStyle": "custom",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    // git
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "[typescriptreact]": {
+    // Language specific
+    "python.formatting.provider": "black",
+    "[javascript][typescript][typescriptreact]": {
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "python.formatting.provider": "black",
+    // Extensions
+    "extensions.ignoreRecommendations": true,
     "cmake.configureOnOpen": false,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
     "latex-workshop.view.pdf.viewer": "tab",
-    "editor.quickSuggestions": {
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.quickSuggestions": { // Tailwind CSS IntelliSense
         "strings": true
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.formatOnSave": true,
-    "extensions.ignoreRecommendations": true,
-    "terminal.integrated.enablePersistentSessions": false
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "editor.stickyScroll.enabled": true
 }
