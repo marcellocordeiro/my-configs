@@ -1,16 +1,10 @@
 #!/bin/sh
 
-npmrc_file=~/.config/npm/npmrc
-npmrc=$(cat <<'EOF'
-fund=false
-audit=false
-prefix=${HOME}/.local
-cache=${HOME}/.cache/npm
+set -e
 
-# pnpm
-global-bin-dir=${HOME}/.local/bin
-EOF
-)
+# npmrc
+npmrc_src="./files/npmrc"
+npmrc_dest="$HOME/.config/npm/npmrc"
 
-echo "${npmrc}" > "${npmrc_file}"
-chmod +x "${npmrc_file}"
+mkdir -p $(dirname "$npmrc_dest")
+cp $npmrc_src $npmrc_dest

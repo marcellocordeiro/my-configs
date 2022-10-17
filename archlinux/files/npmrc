@@ -1,0 +1,7 @@
+fund=false
+audit=false
+prefix=~/.local
+cache=~/.cache/npm
+
+# pnpm
+global-bin-dir=~/.local/bin
