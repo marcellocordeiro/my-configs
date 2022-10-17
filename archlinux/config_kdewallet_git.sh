@@ -38,9 +38,10 @@ systemctl enable --user ssh-agent.service
 
 ssh_config_file=~/.ssh/config
 ssh_config=$(cat <<'EOF'
-Host github.com
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
+AddKeysToAgent yes
+
+Host *
+    IdentityFile ~/.ssh/id_ed25519
 EOF
 )
 
