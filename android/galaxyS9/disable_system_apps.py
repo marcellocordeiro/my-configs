@@ -1,3 +1,5 @@
+# SM-G9600 (ZTO)
+
 from subprocess import run
 
 appsToUninstall = [
