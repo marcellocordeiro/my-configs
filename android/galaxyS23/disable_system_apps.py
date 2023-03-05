@@ -4,7 +4,7 @@ from subprocess import run
 
 appsToUninstall = [
     "com.facebook.appmanager",  # Facebook
-    # "com.facebook.katana",  # Facebook
+    "com.facebook.katana",  # Facebook
     "com.facebook.services",  # Facebook
     "com.facebook.system",  # Facebook
 
@@ -18,7 +18,6 @@ appsToUninstall = [
     "com.swiftkey.swiftkeyconfigurator", # Microsoft SwiftKey Factory Settings
     "com.touchtype.swiftkey", # Microsoft SwiftKey Keyboard
 
-    # "com.google.android.googlequicksearchbox",  # Google App
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
     # "com.google.ar.core",  # Google AR Core
@@ -40,12 +39,20 @@ appsToDisable = [
     # "com.google.android.as",  # Device Personalization Services
     # "com.sec.android.usermanual",  # User Manual
     # "com.sec.android.app.dexonpc",  # DeX for PC
-    # "com.android.providers.partnerbookmarks",  # Partner Bookmarks
+    "com.android.providers.partnerbookmarks",  # Partner Bookmarks
+    "com.sec.android.app.chromecustomizations", # ChromeCustomizations
+
+    "com.google.android.googlequicksearchbox",  # Google App
+    "com.android.hotwordenrollment.xgoogle", # Google Assistant
+    "com.android.hotwordenrollment.okgoogle", # Google Assistant   
+
+    "com.microsoft.appmanager", # Link to Windows
+    "com.samsung.android.mdx", # Link to Windows Service
 ]
 
 systemAppsToDisable = [
     # "com.sec.spp.push",  # Push Service
-    # "com.samsung.android.game.gamehome",  # Game Launcher
+    "com.samsung.android.game.gamehome",  # Game Launcher
 ]
 
 bixby = [
@@ -83,6 +90,7 @@ clearDataCommand = ["adb", "shell", "pm", "clear"]
 installExistingCommand = ["adb", "shell", "cmd", "package", "install-existing"]
 
 for app in appsToUninstall + bixby + samsungPay + arStuff:
+    run(clearDataCommand + [app])
     run(uninstallCommand + [app])
 
 for app in appsToDisable + systemAppsToDisable:
