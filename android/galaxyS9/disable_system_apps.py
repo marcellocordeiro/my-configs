@@ -3,8 +3,6 @@
 from subprocess import run
 
 appsToUninstall = [
-    "com.sec.android.app.fm", # Radio
-
     "com.facebook.appmanager",  # Facebook
     "com.facebook.katana",  # Facebook
     "com.facebook.services",  # Facebook
@@ -16,66 +14,64 @@ appsToUninstall = [
     "com.microsoft.office.excel",  # Microsoft Excel
     "com.microsoft.office.powerpoint",  # Microsoft PowerPoint
     "com.microsoft.office.word",  # Microsoft Word
+    "com.microsoft.appmanager", # Link to Windows
     "com.microsoft.skydrive",  # Microsoft OneDrive
 
-    "com.google.android.googlequicksearchbox",  # Google App
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
-    "com.google.ar.core",  # Google AR Core
-    "com.google.android.projection.gearhead",  # Android Auto
-    "com.google.android.youtube",  # YouTube
+    "com.google.android.apps.youtube.music", # YouTube Music
+    "com.google.android.apps.photos", # Photos
+    "com.google.android.videos", # Google TV
 
-    "com.samsung.android.rubin.app", # Samsung Customization Service
     "com.samsung.android.app.spage", # Samsung Free
-    "com.samsung.android.livestickers", # Deco Pic
-    "com.samsung.android.smartswitchassistant",  # Smart Switch assistant
-    "com.sec.android.easyMover.Agent",  # Smart Switch Agent
-    "com.samsung.android.kidsinstaller" # Kids Installer
+    # "com.sec.android.easyMover.Agent",  # Smart Switch Agent
 
 ]
 
 appsToDisable = [
-    "com.sec.android.widgetapp.samsungapps",  # Samsung Apps Widget
-    "com.samsung.android.aremoji",  # AR Emoji
+    "com.google.android.googlequicksearchbox",  # Google App
     "com.diotek.sec.lookup.dictionary",  # Dictionary
-    "com.google.android.as",  # Device Personalization Services
     "com.sec.android.usermanual",  # User Manual
-    "com.sec.android.app.dexonpc",  # DeX for PC
     "com.android.providers.partnerbookmarks",  # Partner Bookmarks
+
+    "com.android.hotwordenrollment.xgoogle", # Google Assistant
+    "com.android.hotwordenrollment.okgoogle", # Google Assistant
 ]
 
 systemAppsToDisable = [
-    "com.sec.spp.push",  # Push Service
-    "com.samsung.android.game.gamehome",  # Game Launcher
+    # "com.sec.spp.push",  # Push Service
+    # "com.samsung.android.game.gamehome",  # Game Launcher
+    "com.sec.android.app.fm", # Radio
 ]
 
 bixby = [
-    "com.samsung.android.bixby.wakeup",
-    "com.samsung.android.bixby.service",
-    "com.samsung.android.bixby.agent",
-    "com.samsung.android.bixby.agent.dummy",
-    "com.samsung.android.visionintelligence",
+    # "com.samsung.android.bixby.wakeup",
+    # "com.samsung.android.bixby.service",
+    # "com.samsung.android.bixby.agent",
+    # "com.samsung.android.bixby.agent.dummy",
+    # "com.samsung.android.visionintelligence",
 ]
 
 samsungPay = [
-    "com.samsung.android.samsungpassautofill",
-    "com.samsung.android.authfw",
-    "com.samsung.android.samsungpass",
-    "com.samsung.android.spay",
-    "com.samsung.android.spayfw",
+    # "com.samsung.android.samsungpassautofill",
+    # "com.samsung.android.authfw",
+    # "com.samsung.android.samsungpass",
+    # "com.samsung.android.spay",
+    # "com.samsung.android.spayfw",
 ]
 
 arStuff = [
-    "com.samsung.android.aremoji",
-    "com.samsung.android.arzone",
-    "com.samsung.android.visionarapps",
-    "com.samsung.android.ardrawing",
+    # "com.samsung.android.aremoji",
+    # "com.samsung.android.arzone",
+    # "com.samsung.android.visionarapps",
+    # "com.samsung.android.ardrawing",
 ]
 
 cleanSetup = [
     "com.google.android.apps.docs", # Google Drive
     "com.google.android.apps.maps", # Google Maps
     "com.google.android.gm", # Gmail
+    "com.google.android.youtube",  # YouTube
 ]
 
 uninstallCommand = ["adb", "shell", "pm", "uninstall", "--user", "0"]

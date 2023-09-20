@@ -8,51 +8,39 @@ appsToUninstall = [
     "com.facebook.services",  # Facebook
     "com.facebook.system",  # Facebook
 
-    # "br.org.sidi.appsbrasil",  # Apps Brasil
-    # "flipboard.boxer.app",  # Flipboard Briefing
-    # "com.linkedin.android",  # LinkedIn
-    # "com.microsoft.office.excel",  # Microsoft Excel
-    # "com.microsoft.office.powerpoint",  # Microsoft PowerPoint
-    # "com.microsoft.office.word",  # Microsoft Word
+    "com.microsoft.appmanager", # Link to Windows
     "com.microsoft.skydrive",  # Microsoft OneDrive
     "com.swiftkey.swiftkeyconfigurator", # Microsoft SwiftKey Factory Settings
     "com.touchtype.swiftkey", # Microsoft SwiftKey Keyboard
 
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
-    # "com.google.ar.core",  # Google AR Core
-    "com.google.android.projection.gearhead",  # Android Auto
-    # "com.google.android.youtube",  # YouTube
+    "com.google.android.apps.youtube.music", # YouTube Music
+    "com.google.android.apps.photos", # Photos
+    "com.google.android.videos", # Google TV
 
-    # "com.samsung.android.rubin.app", # Samsung Customization Service
-    # "com.samsung.android.app.spage", # Samsung Free
-    # "com.samsung.android.livestickers", # Deco Pic
-    # "com.samsung.android.smartswitchassistant",  # Smart Switch assistant
-    # "com.sec.android.easyMover.Agent",  # Smart Switch Agent
-    # "com.samsung.android.kidsinstaller" # Kids Installer
+    "com.sec.android.easyMover",  # Smart Switch
+    "com.samsung.android.app.tips", # Samsung Tips
+
+    "com.sidia.suframa.notification", # SuframaNotification (random Amazonia toast after a reboot)
 ]
 
 appsToDisable = [
-    # "com.sec.android.widgetapp.samsungapps",  # Samsung Apps Widget
-    # "com.samsung.android.aremoji",  # AR Emoji
-    # "com.diotek.sec.lookup.dictionary",  # Dictionary
-    # "com.google.android.as",  # Device Personalization Services
-    # "com.sec.android.usermanual",  # User Manual
-    # "com.sec.android.app.dexonpc",  # DeX for PC
+    "com.samsung.android.bixby.agent", # Bixby
+    "com.diotek.sec.lookup.dictionary",  # Dictionary
+    "com.sec.android.usermanual",  # User Manual
     "com.android.providers.partnerbookmarks",  # Partner Bookmarks
-    "com.sec.android.app.chromecustomizations", # ChromeCustomizations
+    # "com.sec.android.app.chromecustomizations", # ChromeCustomizations
+    # "com.google.android.as",  # Device Personalization Services
 
     "com.google.android.googlequicksearchbox",  # Google App
     "com.android.hotwordenrollment.xgoogle", # Google Assistant
-    "com.android.hotwordenrollment.okgoogle", # Google Assistant   
-
-    "com.microsoft.appmanager", # Link to Windows
-    "com.samsung.android.mdx", # Link to Windows Service
+    "com.android.hotwordenrollment.okgoogle", # Google Assistant
 ]
 
 systemAppsToDisable = [
     # "com.sec.spp.push",  # Push Service
-    "com.samsung.android.game.gamehome",  # Game Launcher
+    # "com.samsung.android.game.gamehome",  # Game Launcher
 ]
 
 bixby = [
@@ -79,9 +67,10 @@ arStuff = [
 ]
 
 cleanSetup = [
-    # "com.google.android.apps.docs", # Google Drive
-    # "com.google.android.apps.maps", # Google Maps
-    # "com.google.android.gm", # Gmail
+    "com.google.android.apps.docs", # Google Drive
+    "com.google.android.apps.maps", # Google Maps
+    "com.google.android.gm", # Gmail
+    "com.google.android.youtube",  # YouTube
 ]
 
 uninstallCommand = ["adb", "shell", "pm", "uninstall", "--user", "0"]
@@ -124,6 +113,5 @@ for app in []:
     "com.dsi.ant.plugins.antplus",  # ANT+ Plugins Service
     "com.dsi.ant.server",  # --ANT+ HAL service
 ]"""
- 
+
 # adb shell pm list packages | grep app
- 
