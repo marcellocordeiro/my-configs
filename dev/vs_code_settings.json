@@ -1,0 +1,58 @@
+{
+    // General
+    "terminal.integrated.enablePersistentSessions": false,
+    "extensions.ignoreRecommendations": true,
+
+    // Editor
+    "editor.guides.bracketPairs": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // Extensions
+    "cmake.configureOnOpen": false,
+    "editorconfig.generateAuto": false,
+    "editorconfig.showMenuEntry": false,
+    "docker.lsp.telemetry": "off",
+    "redhat.telemetry.enabled": false,
+
+    // Languages
+
+    // C/C++
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+
+    // Rust
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly",
+    ],
+
+    // JavaScript/TypeScript
+    "[javascript][typescriptreact][typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    // Python
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+
+    // JSON
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "json.format.keepLines": true,
+
+    // TOML
+    "evenBetterToml.formatter.reorderKeys": true,
+    "evenBetterToml.formatter.reorderArrays": true,
+
+    // Unwanted
+    "workbench.enableExperiments": false,
+    "chat.commandCenter.enabled": false,
+    "telemetry.feedback.enabled": false,
+}
