@@ -7,35 +7,32 @@ appsToUninstall = [
     "com.facebook.katana",  # Facebook
     "com.facebook.services",  # Facebook
     "com.facebook.system",  # Facebook
-
-    "com.microsoft.appmanager", # Link to Windows
+    "com.microsoft.appmanager",  # Link to Windows
     "com.microsoft.skydrive",  # Microsoft OneDrive
-    "com.swiftkey.swiftkeyconfigurator", # Microsoft SwiftKey Factory Settings
-    "com.touchtype.swiftkey", # Microsoft SwiftKey Keyboard
-
+    "com.swiftkey.swiftkeyconfigurator",  # Microsoft SwiftKey Factory Settings
+    "com.touchtype.swiftkey",  # Microsoft SwiftKey Keyboard
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
-    "com.google.android.apps.youtube.music", # YouTube Music
-    "com.google.android.apps.photos", # Photos
-    "com.google.android.videos", # Google TV
-
-    "com.sec.android.easyMover",  # Smart Switch
-    "com.samsung.android.app.tips", # Samsung Tips
-
-    "com.sidia.suframa.notification", # SuframaNotification (random Amazonia toast after a reboot)
+    "com.google.android.apps.bard",  # Gemini
+    "com.google.android.apps.photos",  # Photos
+    "com.google.android.googlequicksearchbox",  # Google
+    "com.google.android.videos",  # Google TV
+    "com.samsung.android.app.tips",  # Samsung Tips
+    "com.sidia.suframa.notification",  # SuframaNotification (random Amazonia toast after a reboot)
 ]
 
 appsToDisable = [
-    "com.samsung.android.bixby.agent", # Bixby
+    "com.samsung.android.bixby.agent",  # Bixby
     "com.diotek.sec.lookup.dictionary",  # Dictionary
     "com.sec.android.usermanual",  # User Manual
     "com.android.providers.partnerbookmarks",  # Partner Bookmarks
     # "com.sec.android.app.chromecustomizations", # ChromeCustomizations
     # "com.google.android.as",  # Device Personalization Services
-
-    "com.google.android.googlequicksearchbox",  # Google App
-    "com.android.hotwordenrollment.xgoogle", # Google Assistant
-    "com.android.hotwordenrollment.okgoogle", # Google Assistant
+    "com.android.hotwordenrollment.xgoogle",  # Google Assistant
+    "com.android.hotwordenrollment.okgoogle",  # Google Assistant
+    "com.samsung.android.messaging",  # Samsung Messages
+    "com.sec.android.mimage.avatarstickers",  # Avatar Stickers
+    "com.samsung.android.aremoji",  # Galaxy Avatar
 ]
 
 systemAppsToDisable = [
@@ -67,10 +64,11 @@ arStuff = [
 ]
 
 cleanSetup = [
-    "com.google.android.apps.docs", # Google Drive
-    "com.google.android.apps.maps", # Google Maps
-    "com.google.android.gm", # Gmail
+    "com.google.android.apps.docs",  # Google Drive
+    "com.google.android.apps.maps",  # Google Maps
+    "com.google.android.gm",  # Gmail
     "com.google.android.youtube",  # YouTube
+    "com.google.android.apps.youtube.music",  # YouTube Music
 ]
 
 uninstallCommand = ["adb", "shell", "pm", "uninstall", "--user", "0"]
