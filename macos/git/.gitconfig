@@ -1,0 +1,19 @@
+[user]
+	name = {NAME}
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[credential "https://{WORK_HOSTNAME}"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[includeIf "gitdir:~/Developer/Home/"]
+	path = ~/Developer/Home/.gitconfig
+[includeIf "gitdir:~/Developer/Work/"]
+	path = ~/Developer/Work/.gitconfig
