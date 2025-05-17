@@ -3,7 +3,6 @@ $userPackages = @(
     'Microsoft.WindowsCamera'
     'Microsoft.Copilot'
     'MicrosoftCorporationII.MicrosoftFamily'
-    'Microsoft.WindowsFeedbackHub'
     'Microsoft.ZuneMusic'
     'Microsoft.MicrosoftOfficeHub'
     'Microsoft.BingSearch'
@@ -28,7 +27,6 @@ $userPackages = @(
 $systemPackages = @(
     'Microsoft.YourPhone'
     'MicrosoftWindows.CrossDevice'
-    'Microsoft.Windows.DevHome'
     'MicrosoftWindows.Client.WebExperience'
     'Microsoft.WidgetsPlatformRuntime'
 )
