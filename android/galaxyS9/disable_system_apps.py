@@ -7,25 +7,21 @@ appsToUninstall = [
     "com.facebook.katana",  # Facebook
     "com.facebook.services",  # Facebook
     "com.facebook.system",  # Facebook
-
     "br.org.sidi.appsbrasil",  # Apps Brasil
     "flipboard.boxer.app",  # Flipboard Briefing
     "com.linkedin.android",  # LinkedIn
     "com.microsoft.office.excel",  # Microsoft Excel
     "com.microsoft.office.powerpoint",  # Microsoft PowerPoint
     "com.microsoft.office.word",  # Microsoft Word
-    "com.microsoft.appmanager", # Link to Windows
+    "com.microsoft.appmanager",  # Link to Windows
     "com.microsoft.skydrive",  # Microsoft OneDrive
-
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
-    "com.google.android.apps.youtube.music", # YouTube Music
-    "com.google.android.apps.photos", # Photos
-    "com.google.android.videos", # Google TV
-
-    "com.samsung.android.app.spage", # Samsung Free
+    "com.google.android.apps.youtube.music",  # YouTube Music
+    "com.google.android.apps.photos",  # Photos
+    "com.google.android.videos",  # Google TV
+    "com.samsung.android.app.spage",  # Samsung Free
     # "com.sec.android.easyMover.Agent",  # Smart Switch Agent
-
 ]
 
 appsToDisable = [
@@ -33,15 +29,14 @@ appsToDisable = [
     "com.diotek.sec.lookup.dictionary",  # Dictionary
     "com.sec.android.usermanual",  # User Manual
     "com.android.providers.partnerbookmarks",  # Partner Bookmarks
-
-    "com.android.hotwordenrollment.xgoogle", # Google Assistant
-    "com.android.hotwordenrollment.okgoogle", # Google Assistant
+    "com.android.hotwordenrollment.xgoogle",  # Google Assistant
+    "com.android.hotwordenrollment.okgoogle",  # Google Assistant
 ]
 
 systemAppsToDisable = [
     # "com.sec.spp.push",  # Push Service
     # "com.samsung.android.game.gamehome",  # Game Launcher
-    "com.sec.android.app.fm", # Radio
+    "com.sec.android.app.fm",  # Radio
 ]
 
 bixby = [
@@ -68,9 +63,9 @@ arStuff = [
 ]
 
 cleanSetup = [
-    "com.google.android.apps.docs", # Google Drive
-    "com.google.android.apps.maps", # Google Maps
-    "com.google.android.gm", # Gmail
+    "com.google.android.apps.docs",  # Google Drive
+    "com.google.android.apps.maps",  # Google Maps
+    "com.google.android.gm",  # Gmail
     "com.google.android.youtube",  # YouTube
 ]
 

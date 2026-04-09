@@ -9,35 +9,33 @@ appsToUninstall = [
     "com.facebook.system",  # Facebook
     "com.microsoft.appmanager",  # Link to Windows
     "com.microsoft.skydrive",  # Microsoft OneDrive
-    "com.swiftkey.swiftkeyconfigurator",  # Microsoft SwiftKey Factory Settings
     "com.touchtype.swiftkey",  # Microsoft SwiftKey Keyboard
+    "com.swiftkey.swiftkeyconfigurator",  # Microsoft SwiftKey Factory Settings
     "com.android.chrome",  # Google Chrome
     "com.google.android.apps.tachyon",  # Google Duo
     "com.google.android.apps.bard",  # Gemini
     "com.google.android.apps.photos",  # Photos
     "com.google.android.googlequicksearchbox",  # Google
     "com.google.android.videos",  # Google TV
-    "com.samsung.android.app.tips",  # Samsung Tips
     "com.sidia.suframa.notification",  # SuframaNotification (random Amazonia toast after a reboot)
+    "com.samsung.android.messaging",  # Samsung Messages
+    "com.samsung.android.bixby.agent",  # Bixby
+    "com.sec.android.mimage.avatarstickers",  # Avatar Stickers
+    "com.samsung.android.aremoji",  # Galaxy Avatar
+    "com.sec.android.usermanual",  # User Manual
 ]
 
 appsToDisable = [
-    "com.samsung.android.bixby.agent",  # Bixby
-    "com.diotek.sec.lookup.dictionary",  # Dictionary
-    "com.sec.android.usermanual",  # User Manual
-    "com.android.providers.partnerbookmarks",  # Partner Bookmarks
+    # "com.android.providers.partnerbookmarks",  # Partner Bookmarks
     # "com.sec.android.app.chromecustomizations", # ChromeCustomizations
     # "com.google.android.as",  # Device Personalization Services
-    "com.android.hotwordenrollment.xgoogle",  # Google Assistant
-    "com.android.hotwordenrollment.okgoogle",  # Google Assistant
-    "com.samsung.android.messaging",  # Samsung Messages
-    "com.sec.android.mimage.avatarstickers",  # Avatar Stickers
-    "com.samsung.android.aremoji",  # Galaxy Avatar
+    # "com.android.hotwordenrollment.xgoogle",  # Google Assistant
+    # "com.android.hotwordenrollment.okgoogle",  # Google Assistant
 ]
 
 systemAppsToDisable = [
     # "com.sec.spp.push",  # Push Service
-    # "com.samsung.android.game.gamehome",  # Game Launcher
+    "com.samsung.android.game.gamehome",  # Game Launcher
 ]
 
 bixby = [
@@ -98,18 +96,5 @@ for app in []:
 
 # To reinstall
 # adb shell cmd package install-existing {app}
-
-"""extra = [
-    "com.samsung.android.mdx",  # Link to Windows Service
-    "com.microsoft.appmanager",  # Your Phone Companion (Link to Windows)
-    "com.samsung.android.scloud",  # Samsung Cloud
-    "com.samsung.android.smartswitchassistant",  # Smart Switch assistant
-    "com.sec.android.easyMover.Agent",  # Smart Switch Agent
-    "com.sec.android.app.fm",  # FM Radio
-    "com.dsi.ant.service.socket  ",  # --ANT Radio Service
-    "com.dsi.ant.sample.acquirechannels",  # --ANT + DUT
-    "com.dsi.ant.plugins.antplus",  # ANT+ Plugins Service
-    "com.dsi.ant.server",  # --ANT+ HAL service
-]"""
 
 # adb shell pm list packages | grep app
