@@ -1,0 +1,113 @@
+{
+    // General
+    "explorer.confirmDelete": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Terminal
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.defaultProfile.osx": "fish",
+
+    // Editor
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+
+    // git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // Extensions
+    "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": "off",
+    "cmake.configureOnOpen": false,
+    "editorconfig.generateAuto": false,
+    "editorconfig.showMenuEntry": false,
+    "docker.lsp.telemetry": "off",
+    "redhat.telemetry.enabled": false,
+
+    // Languages
+
+    // C/C++
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+
+    // Rust
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly",
+    ],
+
+    // Python
+    "python.languageServer": "None", // using ty
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // JavaScript/TypeScript
+    "[javascript][javascriptreact][typescript][typescriptreact]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+
+    "[html]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+    "[css][tailwindcss]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode"
+    },
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+
+    // JSON
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://turborepo.dev": true,
+        "https://ui.shadcn.com": true,
+        "https://biomejs.dev": true
+    },
+    "json.format.keepLines": true,
+
+    // TOML
+    "evenBetterToml.formatter.reorderKeys": false,
+    "evenBetterToml.formatter.reorderArrays": false,
+
+    // YAML
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+
+    // Unwanted
+    "telemetry.telemetryLevel": "off",
+    "telemetry.feedback.enabled": false,
+    "workbench.enableExperiments": false,
+    "chat.disableAIFeatures": true,
+    "terminal.integrated.initialHint": false,
+
+    "biome.suggestInstallingGlobally": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[mdx]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "svelte.enable-ts-plugin": true,
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+}

@@ -55,4 +55,5 @@
     "workbench.enableExperiments": false,
     "chat.commandCenter.enabled": false,
     "telemetry.feedback.enabled": false,
+    "chat.disableAIFeatures": true,
 }
