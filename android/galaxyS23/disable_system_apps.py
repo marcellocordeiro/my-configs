@@ -17,11 +17,11 @@ appsToUninstall = [
     "com.google.android.apps.photos",  # Photos
     "com.google.android.googlequicksearchbox",  # Google
     "com.google.android.videos",  # Google TV
-    "com.sidia.suframa.notification",  # SuframaNotification (random Amazonia toast after a reboot)
-    "com.samsung.android.messaging",  # Samsung Messages
-    "com.samsung.android.bixby.agent",  # Bixby
-    "com.sec.android.mimage.avatarstickers",  # Avatar Stickers
-    "com.samsung.android.aremoji",  # Galaxy Avatar
+    "com.sidia.suframa.notification",  # SuframaNotification (Amazonia toast after a reboot)
+    #"com.samsung.android.messaging",  # Samsung Messages
+    #"com.samsung.android.bixby.agent",  # Bixby
+    #"com.sec.android.mimage.avatarstickers",  # Avatar Stickers
+    #"com.samsung.android.aremoji",  # Galaxy Avatar
     "com.sec.android.usermanual",  # User Manual
 ]
 
