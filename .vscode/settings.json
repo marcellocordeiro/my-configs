@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [ "/vscode_settings.json" ],
+            "url": "vscode://schemas/settings/user"
+        },
+    ],
+}

@@ -6,6 +6,7 @@
     // Terminal
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.linux": "fish",
 
     // Editor
     "editor.linkedEditing": true,
